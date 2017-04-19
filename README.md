@@ -22,4 +22,4 @@ I have been working on implenting several existing techiques, such as:
 
 I have completed writing most of these algorithms in Matlab, few more to go and I will start uploading. It was very hard for me to reach a level of understanding Digital Signal Processing terms enough. And there were not enough sources where it was explained with simple words, so I will try to make it easier for others who are also interested in this topic.
 
-I plan to start coding all algorithms in other languages as well such as Phyton and Java, maybe there will be others who will want to help me creating this library in other languages as well. 
+I plan to start coding all algorithms in other languages as well such as Python and Java, maybe there will be others who will want to help me creating this library in other languages as well. 
