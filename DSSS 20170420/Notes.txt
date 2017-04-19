@@ -1,0 +1,24 @@
+#DSSS Audio Steganography
+
+#This version is coded under MATLAB R2015a and set to be very close to conventional DSSS approach, in terms of comparing results with further improvements [1]. It is based on hiding text messages in mp3 and wav files.
+
+#Run ss_embedding.m to hide, and ss_extracting.m to retrieve.
+
+#External functions (mp3read and mp3write) are used to read and write mp3 files with lame codec.  I use Microsoft Windows, for mac and linux read the page and get needed codes into "mp3bin" folder [2].
+
+#Pseudorandom sequence is the addictive noise to increase security of the algorithm, so it usually causes a percebtible effect if there is no pre-processing on cover audio. Background noise will be removed when pseudorandom sequebce is not used. Any cipher can be used for additional security.
+
+#Alpha parameter is the embedding strength. Data loss will be experienced when it gets smaller, yet imperceptibility will be improved, and vice versa. Choosing variant parameters according to power spectrum of each segment is a good solution.
+
+#L_min is used in dsss_enc and dsss_dec to control minimum length for segment size to keep robustness efficiently. Capacity - Robustness balance was also studied, and 250 bps capacity was achived with no data loss using several pre-processing filters such as high-pass and smoothing filters.
+
+#Improved versions will be uploaded as soon as I have time to add detailed comment lines for each.
+
+#For any questions, don't hesitate ask me directly
+#https://github.com/ktekeli/
+
+
+#References
+
+[1] Audio Watermarking Techniques, Hyoung Joong Kim
+[2] https://labrosa.ee.columbia.edu/matlab/mp3read.html
